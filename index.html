@@ -1,10 +1,4 @@
 <!--
-TODO LIST:
-
-- top banner with header
-- make it look nicer!
-- remember how to do links
-- for that matter, remember how to deploy this
 
 Hey you! Are you looking at the source code? Really?
 For this (intentionally) Netscape '95 lookin' website?
@@ -17,85 +11,7 @@ I can't exactly stop you, but prepare to be whelmed.
 <html>
 <head>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<style>
-.hideContent {
-  display: none;
-}
-.showContent {
-  display:block;
-}
-.bodyStyle {
-  height: 100%;
-  background-color: aliceblue;
-}
-.showHideButtons {
-  background-image: linear-gradient(to bottom right, gray, white, gray);
-  color: blue;
-  padding: 10px;
-  border-radius: 2px;
-}
-.topBanner {
-  width: 100%;
-  height: 100px;
-  justify-content: space-around;
-  align-items: center;
-  display: flex;
-  background-color: white;
-}
-#topBannerIcons {
-  color: black;
-  font-size: 50px;
-}
-#topBannerText {
-  font-size: 50px;
-  font-family: monospace;
-  font-weight: bold;
-}
-.topNavigation {
-  width: 100%;
-  height: 70px;
-  justify-content: flex-start;
-  align-items: center;
-  display: flex;
-  background-color: gray;
-  align-self: center;
-}
-.topNavigationButtons {
-  width: 20%;
-  height: 68px;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: red;
-  display: flex;
-  border-color: green;
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 5px;
-  background-image: linear-gradient(to bottom right, gray, white, gray);
-}
-#topNavigationIcons {
-  color: black;
-}
-#topNavigationText {
-  font-family: monospace;
-  font-weight: bold;
-  padding-top: 5px;
-}
-.singleBlock {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: cornflowerblue;
-  border-radius: 5px;
-}
-</style>
+<link rel="stylesheet" href="universal-styles.css">
 </head>
 <body class="bodyStyle">
 
@@ -156,31 +72,25 @@ I can't exactly stop you, but prepare to be whelmed.
 
 <div class="singleBlock">
   <h1>
-    An Example Post
+    Hello and Welcome!
   </h1>
   <p>
-    Best viewed on the oldest brick of a monitor you can find.
-    Developed in and tested on Firefox.
+    Welcome to Macrosscape, aiming to be the most comprehensive online Macross 7 resource in English. Now hosting:
+    <br />
+    - Scans of CDs, laserdiscs, artbooks, and anything else we can get our hands on.
+    <br />
+    - Translations of interviews and side material.
+    <br />
+    - Romaji lyrics and newly translated English lyrics for Fire Bomber's music.
+    <br />
+    - Even more coming soon!
   </p>
 </div>
 
-<div class="singleBlock">
-  <button id="songButton" class="showHideButtons">
-    Totsugeki Love Heart
-  </button>
-  <p id="content" class="hideContent">
-    LET'S GO etc etc LOVE HEART
-  </p>
+<div id="bottomText">
+  Best viewed on a monitor with scanlines.
+  Developed in and tested on Firefox.
 </div>
-
-<script>
-// TODO: take input for showSong so we're not writing a million of this function
-document.getElementById("songButton").onclick = function() {showSong()};
-
-function showSong() {
-  document.getElementById("content").classList.toggle("showContent");
-}
-</script>
 
 </body>
 </html>

@@ -1,0 +1,89 @@
+.hideContent {
+  display: none;
+}
+.showContent {
+  display:block;
+}
+.bodyStyle {
+  height: 100%;
+  background-color: aliceblue;
+}
+.showHideButtons {
+  background-image: linear-gradient(to bottom right, gray, white, gray);
+  color: blue;
+  padding: 10px;
+  border-radius: 2px;
+}
+.topBanner {
+  width: 100%;
+  height: 100px;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  background-color: white;
+}
+#topBannerIcons {
+  color: black;
+  font-size: 50px;
+}
+#topBannerText {
+  font-size: 50px;
+  font-family: monospace;
+  font-weight: bold;
+}
+.topNavigation {
+  width: 100%;
+  height: 70px;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  background-color: gray;
+  align-self: center;
+}
+.topNavigationButtons {
+  width: 20%;
+  height: 68px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: red;
+  display: flex;
+  border-color: green;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom right, gray, white, gray);
+}
+#topNavigationIcons {
+  color: black;
+}
+#topNavigationText {
+  font-family: monospace;
+  font-weight: bold;
+  padding-top: 5px;
+}
+.singleBlock {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: cornflowerblue;
+  border-radius: 5px;
+}
+#bottomText {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+h1 {
+  font-size: 36px;
+}
+p {
+  font-size: 30px;
+  line-height: 45px;
+}
