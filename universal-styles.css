@@ -87,3 +87,6 @@ p {
   font-size: 30px;
   line-height: 45px;
 }
+a {
+  text-decoration: none;
+}
