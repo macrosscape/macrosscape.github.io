@@ -8,11 +8,12 @@
   height: 100%;
   background-color: darkmagenta;
 }
-.showHideButtons {
-  background-image: linear-gradient(to bottom right, slategray, white, slategray);
+.musicButtons {
+  background-image: linear-gradient(to bottom right, slategray, mintcream, slategray);
   color: darkmagenta;
   padding: 10px;
-  border-radius: 2px;
+  border-radius: 10px;
+  margin: 5px;
 }
 .topBanner {
   width: 100%;

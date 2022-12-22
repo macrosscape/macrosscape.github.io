@@ -56,27 +56,24 @@
 </div>
 
 <div class="singleBlock">
-  <button id="songButton" class="showHideButtons" onclick="showSong(this, 'PLANETDANCE')">
+  <h5>
+    Click any button to see the translated lyrics below.
+  </h5>
+  <button id="songButton" class="musicButtons" onclick="showSong(this, 'PLANETDANCE')">
     Planet Dance
   </button>
-  <button id="songButton" class="showHideButtons" onclick="showSong(this, 'TOTSUGEKI')">
+  <button id="songButton" class="musicButtons" onclick="showSong(this, 'TOTSUGEKI')">
     Totsugeki Love Heart
   </button>
-  <button id="songButton" class="showHideButtons" onclick="showSong(this, 'REMEMBER')">
+  <button id="songButton" class="musicButtons" onclick="showSong(this, 'REMEMBER')">
     Remember 16
   </button>
-  <button id="songButton" class="showHideButtons" onclick="showSong(this, 'POWER')">
+  <button id="songButton" class="musicButtons" onclick="showSong(this, 'POWER')">
     Power to the Dream
   </button>
-  <button id="songButton" class="showHideButtons" onclick="showSong(this, 'SPIRAL')">
+  <button id="songButton" class="musicButtons" onclick="showSong(this, 'SPIRAL')">
     Spiral Answer
   </button>
-</div>
-
-<div class="singleBlock">
-  <p id="TUTORIAL">
-    Click any button to see the translated lyrics below.
-  </p>
   <p id="PLANETDANCE" class="hideContent">
 PLANET DANCE<br />
 Let's get started, it's Saturday night! How're you feeling? <br />
@@ -269,8 +266,11 @@ I want to show you the rainbow…<br />
 
 <script>
 function showSong(element, id) {
-  document.getElementById(id).classList.toggle("showContent");
-  document.getElementById("TUTORIAL").classList.add("hideContent");
+  const toHide = document.getElementsByClassName("hideContent");
+  for (let i = 0; i < toHide.length; i++) {
+    toHide[i].classList.remove("showContent");
+  }
+   document.getElementById(id).classList.toggle("showContent");
 }
 </script>
 
