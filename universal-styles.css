@@ -14,6 +14,20 @@
   padding: 10px;
   border-radius: 10px;
   margin: 5px;
+  height: 90px;
+  width: 180px;
+  font-family: verdana;
+  font-size: 15px;
+}
+.scanButtons {
+  background-image: linear-gradient(to bottom right, slategray, mintcream, slategray);
+  color: darkmagenta;
+  height: 90px;
+  width: 160px;
+  border-radius: 15px;
+  font-family: verdana;
+  margin: 5px;
+  font-size: 24px;
 }
 .topBanner {
   width: 100%;
@@ -119,4 +133,11 @@ h5 {
 }
 .HiraginoW9 {
     font-family: 'HiraginoSans-W9';
+}
+#buttonContainer {
+  width: 80%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
 }
