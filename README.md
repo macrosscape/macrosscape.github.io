@@ -67,4 +67,7 @@ So altogether, that looks like:
 
 Of course, the width and height will change based on aspect ratio, what the image is, where it is, and what it's being used for.
 
+To embed an image from google drive, get its embed id, and add it to the end of the following URL.
+https://drive.google.com/uc?export=view&id=
+
 More to come if the need presents itself.
