@@ -29,6 +29,15 @@
   margin: 5px;
   font-size: 24px;
 }
+.tlButtons {
+  background-image: linear-gradient(to bottom right, slategray, mintcream, slategray);
+  color: darkmagenta;
+  padding: 10px;
+  border-radius: 15px;
+  font-family: verdana;
+  margin: 5px;
+  font-size: 24px;
+}
 .topBanner {
   width: 100%;
   min-height: 100px;
