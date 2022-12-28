@@ -44,10 +44,10 @@ Example:
 
 <span> - Span (of text)
 
-The simplest tag to use for totally normal text. Use with id="subtext" so it's consistently styled.
+The simplest tag to use for totally normal text, if it needs styling different from the default.
 
 Example:
-<span id="subtext">A bunch of text that's not super mega important.</span>
+<span id="someText">A bunch of text that's not super mega important.</span>
 
 <br> - Line break
 
