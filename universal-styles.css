@@ -20,6 +20,16 @@
   margin: 5px;
   width: 160px;
 }
+.cdButtons {
+  background-image: linear-gradient(to bottom right, slategray, mintcream, slategray);
+  border-radius: 15px;
+  color: darkmagenta;
+  font-family: verdana;
+  font-size: 16px;
+  height: 100px;
+  margin: 5px;
+  width: 200px;
+}
 .tlButtons {
   background-image: linear-gradient(to bottom right, slategray, mintcream, slategray);
   border-radius: 15px;
