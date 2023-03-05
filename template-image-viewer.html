@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="universal-styles.css">
+</head>
+<body class="bodyStyle">
+
+<div class="topBanner">
+  <a href="index.html" id="topBannerText">
+    Macrosscape:Fire Bomber's Room
+  </a>
+</div>
+
+<div class="topNavigation">
+  <a href="scans.html" class="topNavigationButtons">
+    <i class="material-icons" id="topNavigationIcons">
+      wallpaper
+    </i>
+    <span id="topNavigationText">
+      Scans
+    </span>
+  </a>
+  <a href="translations.html" class="topNavigationButtons">
+    <i class="material-icons" id="topNavigationIcons">
+      terminal
+    </i>
+    <span id="topNavigationText">
+      Translations
+    </span>
+  </a>
+  <a href="music.html" class="topNavigationButtons">
+    <i class="material-icons" id="topNavigationIcons">
+      apartment
+    </i>
+    <span id="topNavigationText">
+      Music
+    </span>
+  </a>
+  <a href="merch.html" class="topNavigationButtons">
+    <i class="material-icons" id="topNavigationIcons">
+      wysiwyg
+    </i>
+    <span id="topNavigationText">
+      Merchandise
+    </span>
+  </a>
+  <a href="links.html" class="topNavigationButtons">
+    <i class="material-icons" id="topNavigationIcons">
+      microwave
+    </i>
+    <span id="topNavigationText">
+      Links
+    </span>
+  </a>
+</div>
+
+<div class="singleBlock">
+
+  <h5>
+    Image Viewer Template
+  </h5>
+
+  <div class="viewer-row">
+    <div class="viewer-column">
+      <!--
+      SRC - thumbnail url
+      alt - alt text
+      style - heights should all be the same!
+      onclick - change the second part to be the link where the full size image is located
+        and the third part to be any text you want to display with the image
+        otherwise leave it as ''
+      -->
+      <img
+        src="header.png"
+        alt="Alpha Edge"
+        style="width:256px;height:256px;"
+        onclick="fullSizeImage(this, 'https://macrosscape.github.io/', 'Explanatory Text');"
+      >
+    </div>
+    <div class="viewer-column">
+      <img
+        src="header.png"
+        alt="Beta Smash"
+        style="width:256px;height:256px;"
+        onclick="fullSizeImage(this, 'https://macrosscape.github.io/', 'Explanatory Text');"
+      >
+    </div>
+    <div class="viewer-column">
+      <img
+        src="header.png"
+        alt="Gamma Future"
+        style="width:256px;height:256px;"
+        onclick="fullSizeImage(this, 'https://macrosscape.github.io/', 'Explanatory Text');"
+      >
+    </div>
+    <div class="viewer-column">
+      <img
+        src="header.png"
+        alt="Delta Rise Claw"
+        style="width:256px;height:256px;"
+        onclick="fullSizeImage(this, 'https://macrosscape.github.io/', 'Explanatory Text');"
+      >
+    </div>
+  </div>
+
+  <div class="image-container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <a href="" id="linkToFull" target="_blank">
+        <img id="expandedImg" style="width:95%">
+      </a>
+    <div id="imgtext"></div>
+  </div>
+
+</div>
+
+</body>
+
+<script>
+function fullSizeImage(imgs, fullSizeLink, descriptiveText) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  var link = document.getElementById("linkToFull");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = descriptiveText;
+  link.href = fullSizeLink;
+  expandImg.parentElement.parentElement.style.display = "block";
+}
+</script>
+
+</html>
