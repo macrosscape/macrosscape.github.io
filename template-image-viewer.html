@@ -35,7 +35,7 @@ function fullSizeImage(imgs, fullSizeLink, descriptiveText) {
   var expandImg = document.getElementById("expandedImg");
   var imgText = document.getElementById("imgtext");
   var link = document.getElementById("linkToFull");
-  expandImg.src = imgs.src;
+  expandImg.src = fullSizeLink;
   imgText.innerHTML = descriptiveText;
   link.href = fullSizeLink;
   expandImg.parentElement.parentElement.style.display = "block";
