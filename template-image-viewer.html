@@ -1,105 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="universal-styles.css">
-</head>
-<body class="bodyStyle">
 
-<div class="topBanner">
-  <a href="index.html" id="topBannerText">
-    Macrosscape:Fire Bomber's Room
-  </a>
-</div>
-
-<div class="topNavigation">
-  <a href="scans.html" class="topNavigationButtons">
-    <i class="material-icons" id="topNavigationIcons">
-      wallpaper
-    </i>
-    <span id="topNavigationText">
-      Scans
-    </span>
-  </a>
-  <a href="translations.html" class="topNavigationButtons">
-    <i class="material-icons" id="topNavigationIcons">
-      terminal
-    </i>
-    <span id="topNavigationText">
-      Translations
-    </span>
-  </a>
-  <a href="music.html" class="topNavigationButtons">
-    <i class="material-icons" id="topNavigationIcons">
-      apartment
-    </i>
-    <span id="topNavigationText">
-      Music
-    </span>
-  </a>
-  <a href="merch.html" class="topNavigationButtons">
-    <i class="material-icons" id="topNavigationIcons">
-      wysiwyg
-    </i>
-    <span id="topNavigationText">
-      Merchandise
-    </span>
-  </a>
-  <a href="links.html" class="topNavigationButtons">
-    <i class="material-icons" id="topNavigationIcons">
-      microwave
-    </i>
-    <span id="topNavigationText">
-      Links
-    </span>
-  </a>
-</div>
-
-<div class="singleBlock">
-
-  <h5>
-    Image Viewer Template
-  </h5>
-
-  <div class="viewer-row">
-    <div class="viewer-column">
+	<!-- Insert this into the Single Block -->
       <!--
-      SRC - thumbnail url
+      SRC - thumbnail url in the google drive export view format
       alt - alt text
       style - heights should all be the same!
-      onclick - change the second part to be the link where the full size image is located
+      onclick - change the second part to be the link where the full size image is located (same format as before)
         and the third part to be any text you want to display with the image
         otherwise leave it as ''
+		copy as many Viewer Columns as needed
       -->
-      <img
-        src="header.png"
-        alt="Alpha Edge"
-        style="width:256px;height:256px;"
-        onclick="fullSizeImage(this, 'https://macrosscape.github.io/', 'Explanatory Text');"
-      >
-    </div>
+  <div class="viewer-row">
     <div class="viewer-column">
       <img
-        src="header.png"
-        alt="Beta Smash"
+        src="https://drive.google.com/uc?export=view&id=TBID"
+        alt=""
         style="width:256px;height:256px;"
-        onclick="fullSizeImage(this, 'https://macrosscape.github.io/', 'Explanatory Text');"
-      >
-    </div>
-    <div class="viewer-column">
-      <img
-        src="header.png"
-        alt="Gamma Future"
-        style="width:256px;height:256px;"
-        onclick="fullSizeImage(this, 'https://macrosscape.github.io/', 'Explanatory Text');"
-      >
-    </div>
-    <div class="viewer-column">
-      <img
-        src="header.png"
-        alt="Delta Rise Claw"
-        style="width:256px;height:256px;"
-        onclick="fullSizeImage(this, 'https://macrosscape.github.io/', 'Explanatory Text');"
+        onclick="fullSizeImage(this, 'https://drive.google.com/uc?export=view&id=FSID', '');"
       >
     </div>
   </div>
@@ -112,9 +28,7 @@
     <div id="imgtext"></div>
   </div>
 
-</div>
-
-</body>
+<!-- Add this after the </body> tag but before the </html> tag -->
 
 <script>
 function fullSizeImage(imgs, fullSizeLink, descriptiveText) {
@@ -127,5 +41,3 @@ function fullSizeImage(imgs, fullSizeLink, descriptiveText) {
   expandImg.parentElement.parentElement.style.display = "block";
 }
 </script>
-
-</html>
