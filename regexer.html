@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<header>
+<style>
+  input {
+    font-size: 100px;
+    margin-left: 15%;
+  }
+  button {
+    font-size: 90px;
+    margin-left: 40%;
+    margin-top: 15px;
+  }
+</style>
+</header>
+<body>
+  <input type="text" id="id-redux" name="id-redux"/>
+  <br />
+  <button type="button" onclick="copyId()">Copy ID</button>
+</body>
+<script>
+  function copyId() {
+    var url = document.getElementById('id-redux').value;
+    var cleanedURL = url.substring(32);
+    cleanedURL = cleanedURL.substring(0, cleanedURL.search('/'));
+    navigator.clipboard.writeText(cleanedURL);
+  }
+</script>
+</html>
