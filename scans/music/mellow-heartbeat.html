@@ -62,7 +62,7 @@
     <img src="https://drive.google.com/uc?export=view&id=13qkP6eBe5ZOOZUaPpbxpywJVwDj-5MFK" height="640" width-"640" alt="dyna 1 Dread Note Back" />
   </a>
 -->
-Our website is styled after the website in this album, and it's sequel Melodius Illusion.
+Our website is styled after the website in this album, and its sequel Melodius Illusion.
 <br></br>
   <a href="https://drive.google.com/uc?export=view&id=1eYqitw2l4JOBA_QZk2WwxBcbE7Abd5Z3" target="_blank">
     <img src="https://drive.google.com/uc?export=view&id=1GZUK4CC_2czBIfOxWcylRUacHQaeaw09" height="500" width="500" alt="mellow heart cover" />
@@ -81,10 +81,79 @@ Our website is styled after the website in this album, and it's sequel Melodius 
     <a href="https://drive.google.com/uc?export=view&id=1JqxOjTpSkr3yaD02CgGIscx6RbHD11eB" target="_blank">
     <img src="https://drive.google.com/uc?export=view&id=1Xak_t-wL9qDgpoizIzzHbh0MB3E7BplY" height="250" width="250" alt="mellow heart rear" />
   </a>
-  <!-- https://drive.google.com/uc?export=view&id= -->
+  
+  <div class="viewer-row">
+    <div class="viewer-column">
+      <img
+        src="https://drive.google.com/uc?export=view&id=1u2-9lWxkMf_YgbRJJFLuaRjrLJ-f0Izi"
+        alt=""
+        style="width:256px;height:112px;"
+        onclick="fullSizeImage(this, 'https://drive.google.com/uc?export=view&id=1Xg99Sq9j-h7PXinsn2kWHYLJU_9_eRzs', '');"
+      >
+    </div>
+	    <div class="viewer-column">
+      <img
+        src="https://drive.google.com/uc?export=view&id=19zAhwfYw7KLLNi3pBrzwO1GVuh2as4db"
+        alt=""
+        style="width:256px;height:112px;"
+        onclick="fullSizeImage(this, 'https://drive.google.com/uc?export=view&id=1A2WwU-ZNWF2HlnRu3_QQmp7VjJqeSchn', '');"
+      >
+    </div>
+	    <div class="viewer-column">
+      <img
+        src="https://drive.google.com/uc?export=view&id=10eU06QlkxckVAgjayTJ47aJ5-h_yMQwJ"
+        alt=""
+        style="width:256px;height:112px;"
+        onclick="fullSizeImage(this, 'https://drive.google.com/uc?export=view&id=1RgP-VGikKm9Ry8bf9qdC8AecCmXCim3C', '');"
+      >
+    </div>
+	<div class="viewer-column">
+      <img
+        src="https://drive.google.com/uc?export=view&id=19sxrgTvQthhCJV_bGpp__vyJBqwdBj1s"
+        alt=""
+        style="width:256px;height:112px;"
+        onclick="fullSizeImage(this, 'https://drive.google.com/uc?export=view&id=1qomcX3QWeq4aI7N9GtLtqwy3WIBD0fui', '');"
+      >
+    </div>
+	    <div class="viewer-column">
+      <img
+        src="https://drive.google.com/uc?export=view&id=18mOrHszuE-MQ-uf-UFeg_SlP5t37Lypr"
+        alt=""
+        style="width:256px;height:112px;"
+        onclick="fullSizeImage(this, 'https://drive.google.com/uc?export=view&id=1BBTs4TSRlMQEqENqt59hpyCYz6213CeR', '');"
+      >
+    </div>
+	    <div class="viewer-column">
+      <img
+        src="https://drive.google.com/uc?export=view&id=1smdnYO52TMT9bOF1sznu5XzJ7mnPAyKn"
+        alt=""
+        style="width:256px;height:112px;"
+        onclick="fullSizeImage(this, 'https://drive.google.com/uc?export=view&id=1pkVKLQFkEABM1mr8AX7t18mUKlBrPnQt', '');"
+      >
+    </div>
+  </div>
+
+  <div class="image-container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <a href="" id="linkToFull" target="_blank">
+        <img id="expandedImg" style="width:95%">
+      </a>
+    <div id="imgtext"></div>
+  </div>
 </div>
 
-
-
 </body>
+
+<script>
+function fullSizeImage(imgs, fullSizeLink, descriptiveText) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  var link = document.getElementById("linkToFull");
+  expandImg.src = fullSizeImage;
+  imgText.innerHTML = descriptiveText;
+  link.href = fullSizeLink;
+  expandImg.parentElement.parentElement.style.display = "block";
+}
+</script>
+
 </html>
