@@ -20,6 +20,16 @@
   margin: 5px;
   width: 160px;
 }
+.scanButtonsSpecial {
+  background-image: linear-gradient(to bottom right, slategray, mintcream, slategray);
+  border-radius: 15px;
+  color: darkmagenta;
+  font-family: verdana;
+  font-size: 17px;
+  height: 90px;
+  margin: 5px;
+  width: 160px;
+}
 .cdButtons {
   background-image: linear-gradient(to bottom right, slategray, mintcream, slategray);
   border-radius: 15px;
