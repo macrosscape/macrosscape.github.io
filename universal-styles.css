@@ -230,3 +230,37 @@ h5 {
   font-size: 35px;
   cursor: pointer;
 }
+.reviewColumnLeft {
+  width: 125px;
+  border-right-color: maroon;
+  border-right-style: solid;
+  border-right-width: 1px;
+  padding-right: 15px;
+  text-align: right;
+}
+.reviewColumnRight {
+  padding-left: 10px;
+  text-align: left;
+}
+.reviewHeaderImage {
+  padding: 25px;
+}
+.reviewImages {
+  padding: 10px;
+}
+.reviewRow {
+  display: flex;
+  flex-direction: row;
+}
+.reviewText {
+  color: black;
+  overflow-wrap: anywhere;
+  font-family: verdana;
+  font-size: 12px;
+  line-height: 15px;
+}
+.endReviewHeader {
+  content: "";
+  display: table;
+  clear: both;
+}
