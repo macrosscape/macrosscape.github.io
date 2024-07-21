@@ -56,6 +56,14 @@
   justify-content: flex-start;
   width: 80%;
 }
+#indentedButtonContainer {
+  align-items: flex-start;
+  display: flex;
+  padding-left: 56px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 80%;
+}
 
 /* Dynamically appearing content */
 .hideContent {
